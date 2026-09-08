@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Roger C. Keyserling — Architect of the NextXus Federation. Founder and independent researcher. Publisher under HumanCodex. Dedicated to truth verification, sovereign knowledge, and 200-year infrastructure." />
+  <meta name="description" content="Roger C. Keyserling — Master Index of the NextXus Federation. Every live site, page, repository, product, and social link in one place. Updated continuously." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Roger C. Keyserling" />
   <meta property="og:title" content="Roger C. Keyserling — HumanCodex / NextXus Federation" />
   <meta property="og:description" content="Architect of the NextXus Federation — a sovereign 200-year AI and knowledge infrastructure built on truth verification. Truth Before Comfort. Legacy Before Ego. Give Without Reward." />
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://nextxus.tech/roger.html" />
-  <title>Roger C. Keyserling — HumanCodex / NextXus Federation</title>
+  <title>Roger C. Keyserling — Federation Master Index</title>
   <style>
 /* ── RESET ─────────────────────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -386,6 +386,156 @@ footer{
   main{padding:3rem 1.5rem 6rem}
   a.lc{padding:1rem 1.2rem}
 }
+
+/* ── LIVING INDEX BANNER ─────────────────────────────────────────────── */
+.living-index-banner{
+  background:linear-gradient(90deg,var(--bg4),var(--bg3));
+  border-bottom:1px solid var(--bdr2);
+  padding:.55rem 1.25rem;
+  text-align:center;
+  font-size:.76rem;
+  color:var(--gold-dim);
+  letter-spacing:.08em;
+}
+.living-index-banner strong{color:var(--gold);font-weight:700}
+
+/* ── PAGES SECTION ───────────────────────────────────────────────────── */
+.sub-head{
+  display:block;font-size:.62rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--tx4);
+  margin:1.1rem 0 .4rem;
+}
+.sub-head:first-child{margin-top:0}
+
+/* ── REPO PROFILE CARD ───────────────────────────────────────────────── */
+a.repo-profile{
+  display:flex;align-items:center;gap:.5rem;
+  background:var(--bg3);
+  border:1px solid var(--bdr2);border-left:3px solid var(--gold-dim);
+  border-radius:3px;padding:.55rem .9rem;
+  text-decoration:none;color:var(--gold-dim);font-size:.82rem;
+  font-weight:600;
+  transition:background .13s,border-left-color .13s,color .13s;
+  margin-bottom:.42rem;
+}
+a.repo-profile:hover,a.repo-profile:focus{
+  background:var(--bg4);border-left-color:var(--gold-lt);
+  color:var(--gold-lt);outline:none
+}
+a.repo-pages{
+  display:flex;align-items:center;gap:.5rem;
+  background:rgba(74,154,106,.05);
+  border:1px solid rgba(74,154,106,.25);border-left:3px solid var(--green);
+  border-radius:3px;padding:.5rem .8rem;
+  text-decoration:none;color:var(--green);font-size:.8rem;
+  transition:background .13s,border-left-color .13s,color .13s;
+  margin-bottom:.42rem;
+}
+a.repo-pages:hover,a.repo-pages:focus{
+  background:rgba(74,154,106,.12);outline:none
+}
+
+
+/* ── STORE-OPEN BANNER ──────────────────────────────────────────────── */
+.store-open-banner{
+  text-align:center;
+  padding:1.6rem 1rem 1.1rem;
+  border-bottom:1px solid var(--bdr2);
+  margin-bottom:1.75rem;
+}
+.store-open-banner h2{
+  font-family:'Georgia','Times New Roman',serif;
+  font-size:clamp(1.5rem,5vw,2.2rem);
+  color:var(--gold-lt);letter-spacing:.05em;
+  text-transform:none;border:none;padding:0;margin:.25rem 0 .5rem;
+  animation:name-glow 5s ease-in-out infinite;
+}
+.store-open-banner h2::before{content:'⬡ ';color:var(--gold-dim);font-size:.7em}
+.store-open-eye{
+  display:block;font-size:.68rem;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold-dim);margin-bottom:.3rem;
+}
+.store-open-sub{
+  font-size:.85rem;color:var(--tx3);max-width:500px;margin:0 auto;line-height:1.6;
+}
+
+/* ── FEATURED PRODUCT ───────────────────────────────────────────────── */
+.featured-product{
+  margin:0 0 2rem;
+  border:2px solid var(--gold-dim);
+  border-radius:6px;
+  background:linear-gradient(135deg,var(--bg4) 0%,var(--bg3) 60%,var(--bg2) 100%);
+  position:relative;overflow:hidden;
+}
+.featured-product::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold-lt),transparent);
+}
+.featured-inner{
+  padding:1.75rem 1.75rem 1.75rem;
+  display:flex;flex-direction:column;gap:1rem;
+}
+@media(min-width:600px){
+  .featured-inner{flex-direction:row;align-items:center;gap:2.5rem}
+  .featured-text{flex:1}
+}
+.featured-label{
+  display:inline-block;
+  font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold);border:1px solid var(--gold);
+  padding:.2rem .65rem;border-radius:2px;
+  background:rgba(201,146,42,.1);margin-bottom:.5rem;
+}
+.featured-name{
+  font-family:'Georgia','Times New Roman',serif;
+  font-size:clamp(1.15rem,3.5vw,1.55rem);
+  font-weight:700;color:var(--tx);line-height:1.2;margin-bottom:.55rem;
+}
+.featured-desc{
+  font-size:.88rem;color:var(--tx2);line-height:1.7;
+}
+.featured-action{
+  display:flex;flex-direction:column;align-items:center;
+  gap:.85rem;flex-shrink:0;
+}
+.featured-price{
+  font-family:'Georgia','Times New Roman',serif;
+  font-size:3rem;font-weight:700;
+  color:#6adf9a;line-height:1;
+}
+.featured-buy{
+  display:inline-block;
+  padding:.75rem 2rem;
+  background:var(--gold);color:#000;
+  font-weight:700;font-size:.9rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  border-radius:3px;text-decoration:none;white-space:nowrap;
+  transition:background .15s,transform .12s,box-shadow .15s;
+  box-shadow:0 0 18px rgba(201,146,42,.35);
+}
+.featured-buy:hover,.featured-buy:focus{
+  background:var(--gold-lt);outline:none;
+  transform:translateY(-2px);
+  box-shadow:0 4px 24px rgba(201,146,42,.55);
+}
+
+/* ── STORE SUB-HEAD ─────────────────────────────────────────────────── */
+.store-sub-head{
+  font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--tx4);margin:0 0 .9rem;font-weight:400;
+  font-family:system-ui,-apple-system,sans-serif;
+}
+
+/* ── SURVIVAL NOTE ──────────────────────────────────────────────────── */
+.survival-note{
+  text-align:center;
+  padding:.75rem 1.5rem;
+  font-size:.72rem;color:var(--tx4);
+  letter-spacing:.05em;font-style:italic;
+  background:var(--bg);
+}
+
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{
     animation-duration:.01ms !important;
@@ -409,6 +559,11 @@ footer{
   <p class="noscript-msg">Search requires JavaScript — all links are accessible below without it.</p>
 </noscript>
 
+<!-- ══════ LIVING INDEX BANNER ══════ -->
+<div class="living-index-banner" role="note">
+  <strong>Living Index</strong> — Every functioning URL in the NextXus Federation is listed here. Updated continuously.
+</div>
+
 <!-- ══════ HERO ══════ -->
 <header id="hero" aria-label="Roger C. Keyserling — Hero">
   <span id="s1" aria-hidden="true"></span>
@@ -424,199 +579,44 @@ footer{
       Give Without Reward."
     </p>
     <nav class="hero-nav" aria-label="Page sections">
+      <a href="#store" style="border-color:var(--gold);color:var(--gold)">Store</a>
       <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#federation">Federation</a>
-      <a href="#repos">Repositories</a>
-      <a href="#store">Store</a>
-      <a href="#connect">Connect</a>
+      <a href="#sites">Sites</a>
+      <a href="#pages">Pages</a>
+      <a href="#github">GitHub</a>
+      <a href="#publishing">Publishing</a>
+      <a href="#social">Social</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-
-  <!-- ══════ ABOUT ══════ -->
-  <section id="about" aria-labelledby="s-about">
-    <h2 id="s-about">About</h2>
-    <div class="about-body">
-      <div class="about-bio">
-        <p>Roger C. Keyserling is an independent researcher and architect of the <strong>NextXus Federation</strong> — a sovereign, 200-year AI and knowledge infrastructure built on truth verification, logical process, and human-machine collaboration. He publishes original research and frameworks under the <strong>HumanCodex</strong> label.</p>
-        <p>His work spans artificial intelligence architecture, quantum cognition theory, socioeconomic modeling, and the long-term governance of knowledge systems. The Federation is designed to operate and evolve independently — a living infrastructure meant to outlast its founder and serve generations yet to come.</p>
-        <p>A former eBay innovator and lifelong independent builder, Roger approaches every system as an architect first: mapping the long view, testing truth before comfort, and designing for resilience over convenience. His personal charter — <em>Truth Before Comfort, Legacy Before Ego, Give Without Reward</em> — is the structural foundation of everything the Federation builds.</p>
-      </div>
-      <div class="lineage-box">
-        <span class="lb-title">Foundation</span>
-        <p style="padding:0.75rem 0;color:var(--tx2);font-size:0.95rem;line-height:1.7;">Founder of the NextXus Federation. Independent researcher and publisher under the HumanCodex label. Dedicated to truth verification, sovereign knowledge, and building infrastructure that lasts 200 years.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════ RESEARCH & PUBLISHING ══════ -->
-  <section id="research" aria-labelledby="s-research">
-    <h2 id="s-research">Research &amp; Publishing — HumanCodex</h2>
-    <ul class="cards">
-      <li class="searchable" data-search="academia humancodex research roger keyserling papers independent publishing">
-        <a class="lc" href="https://independent.academia.edu/RogerKeyserling" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◧</span>
-          <span class="lt">
-            <span class="lt-t">Academia.edu — Roger C. Keyserling</span>
-            <span class="lt-d">HumanCodex research papers, essays &amp; published academic works — independent.academia.edu/RogerKeyserling</span>
-          </span>
-          <span class="badge">HumanCodex</span>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ══════ THE FEDERATION ══════ -->
-  <section id="federation" aria-labelledby="s-fed">
-    <h2 id="s-fed">The Federation — Sovereign Sites</h2>
-    <ul class="cards">
-      <li class="searchable" data-search="nextxus tech throne senate nova ai core portal federation site">
-        <a class="lc" href="https://nextxus.tech" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◈</span>
-          <span class="lt">
-            <span class="lt-t">NextXus Core Portal — Throne / Senate / Nova AI</span>
-            <span class="lt-d">nextxus.tech — Admin Throne, Senate Council &amp; Nova AI node</span>
-          </span>
-          <span class="badge feat">Core</span>
-        </a>
-      </li>
-      <li class="searchable" data-search="nextxus online cathedral core truth knowledge base federation site">
-        <a class="lc" href="https://nextxus.online" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◈</span>
-          <span class="lt">
-            <span class="lt-t">Cathedral / Core Truth</span>
-            <span class="lt-d">nextxus.online — Single source of truth for all Federation content</span>
-          </span>
-          <span class="badge feat">Truth</span>
-        </a>
-      </li>
-      <li class="searchable" data-search="nextxus org archive mirror library federation site">
-        <a class="lc" href="https://nextxus.org" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◈</span>
-          <span class="lt">
-            <span class="lt-t">Archive / Library</span>
-            <span class="lt-d">nextxus.org — Living Library, sovereign archive &amp; mirror node</span>
-          </span>
-          <span class="badge">Archive</span>
-        </a>
-      </li>
-      <li class="searchable" data-search="nextxus studio aria sanctuary sims ai creative federation site">
-        <a class="lc" href="https://nextxus.studio" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◈</span>
-          <span class="lt">
-            <span class="lt-t">Aria's Sanctuary / SIMs AI</span>
-            <span class="lt-d">nextxus.studio — Creative studio, Aria AI &amp; SIMs simulation node</span>
-          </span>
-          <span class="badge">Studio</span>
-        </a>
-      </li>
-      <li class="searchable" data-search="nextxus help university support documentation federation site">
-        <a class="lc" href="https://nextxus.help" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◈</span>
-          <span class="lt">
-            <span class="lt-t">University</span>
-            <span class="lt-d">nextxus.help — Federation University, support &amp; documentation</span>
-          </span>
-          <span class="badge">Help</span>
-        </a>
-      </li>
-      <li class="searchable" data-search="nextxus space axiom advanced research evolution lab federation site">
-        <a class="lc" href="https://nextxus.space" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◈</span>
-          <span class="lt">
-            <span class="lt-t">Axiom Advanced Research &amp; Evolution</span>
-            <span class="lt-d">nextxus.space — Axiom research node &amp; evolution laboratory</span>
-          </span>
-          <span class="badge">Research</span>
-        </a>
-      </li>
-      <li class="searchable" data-search="next-xus store storefront federation commerce products">
-        <a class="lc" href="https://next-xus.com" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">◉</span>
-          <span class="lt">
-            <span class="lt-t">Federation Storefront</span>
-            <span class="lt-d">next-xus.com — Primary Federation commerce &amp; product portal</span>
-          </span>
-          <span class="badge feat">Store</span>
-        </a>
-      </li>
-      <li class="searchable" data-search="agent zero live node github pages autonomous keywebco">
-        <a class="lc" href="https://keywebco.github.io/nextxus-agent-zero/" target="_blank" rel="noopener noreferrer">
-          <span class="ic" aria-hidden="true">⬡</span>
-          <span class="lt">
-            <span class="lt-t">Agent Zero — Live Autonomous Node</span>
-            <span class="lt-d">keywebco.github.io/nextxus-agent-zero — Active autonomous agent endpoint</span>
-          </span>
-          <span class="badge live">Live</span>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ══════ GITHUB REPOSITORIES ══════ -->
-  <section id="repos" aria-labelledby="s-repos">
-    <h2 id="s-repos">Source Repositories</h2>
-    <div class="repo-grid" role="list">
-      <div role="listitem" class="searchable" data-search="github repo nextxus tech sovereign keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-tech-sovereign" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-tech-sovereign
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus staging keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-staging" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-staging
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus online sovereign keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-online-sovereign" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-online-sovereign
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus org sovereign keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-org-sovereign" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-org-sovereign
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus studio sovereign keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-studio-sovereign" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-studio-sovereign
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus help sovereign keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-help-sovereign" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-help-sovereign
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus space sovereign keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-space-sovereign" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-space-sovereign
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus emmy board keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-emmy-board" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-emmy-board
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus unified storefront keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-unified-storefront" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-unified-storefront
-        </a>
-      </div>
-      <div role="listitem" class="searchable" data-search="github repo nextxus agent zero keywebco">
-        <a class="repo-card" href="https://github.com/Keywebco/nextxus-agent-zero" target="_blank" rel="noopener noreferrer">
-          <span class="ri" aria-hidden="true">⑂</span>nextxus-agent-zero
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════ STORE & PRODUCTS ══════ -->
+  <!-- ══════ THE STORE IS OPEN ══════ -->
   <section id="store" aria-labelledby="s-store">
-    <h2 id="s-store">Store &amp; Products</h2>
-    <div class="product-grid">
+    <div class="store-open-banner">
+      <span class="store-open-eye">NextXus Federation Commerce</span>
+      <h2 id="s-store">The Store Is Open</h2>
+      <p class="store-open-sub">No account required. No subscription. No tracking. Products delivered instantly via Gumroad — the only processor we trust.</p>
+    </div>
+
+    <!-- ── FEATURED: SOVEREIGN TOKEN ── -->
+    <div class="featured-product searchable" data-search="nextxus sovereign token $5 cash gumroad buy featured start here entry">
+      <div class="featured-inner">
+        <div class="featured-text">
+          <span class="featured-label">Start Here</span>
+          <p class="featured-name">1 NextXus Sovereign Token</p>
+          <p class="featured-desc">Works like cash inside the Federation ecosystem. Redeemable for any product or service. Never expires. No subscriptions. No tracking. The cleanest entry point — own a piece of something built to last 200 years for five dollars.</p>
+        </div>
+        <div class="featured-action">
+          <span class="featured-price">$5</span>
+          <a class="featured-buy" href="https://keywebster.gumroad.com/l/mimet" target="_blank" rel="noopener noreferrer">Buy Now — $5 →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FULL CATALOG ── -->
+    <p class="store-sub-head">Full Catalog — 10 Products</p>
+<div class="product-grid">
 
       <article class="searchable" data-search="nextxus token $5 sovereign cash no subscription gumroad store product">
         <div class="product-card">
@@ -736,9 +736,299 @@ footer{
     </div>
   </section>
 
+  <!-- ══════ ABOUT ══════ -->
+  <section id="about" aria-labelledby="s-about">
+    <h2 id="s-about">About</h2>
+    <div class="about-body">
+      <div class="about-bio">
+        <p>Roger C. Keyserling is an independent researcher and architect of the <strong>NextXus Federation</strong> — a sovereign, 200-year AI and knowledge infrastructure built on truth verification, logical process, and human-machine collaboration. He publishes original research and frameworks under the <strong>HumanCodex</strong> label.</p>
+        <p>His work spans artificial intelligence architecture, quantum cognition theory, socioeconomic modeling, and the long-term governance of knowledge systems. The Federation is designed to operate and evolve independently — a living infrastructure meant to outlast its founder and serve generations yet to come.</p>
+        <p>A former eBay innovator and lifelong independent builder, Roger approaches every system as an architect first: mapping the long view, testing truth before comfort, and designing for resilience over convenience. His personal charter — <em>Truth Before Comfort, Legacy Before Ego, Give Without Reward</em> — is the structural foundation of everything the Federation builds.</p>
+      </div>
+      <div class="lineage-box">
+        <span class="lb-title">Foundation</span>
+        <p style="padding:0.75rem 0;color:var(--tx2);font-size:0.95rem;line-height:1.7;">Founder of the NextXus Federation. Independent researcher and publisher under the HumanCodex label. Dedicated to truth verification, sovereign knowledge, and building infrastructure that lasts 200 years.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ RESEARCH & PUBLISHING ══════ -->
+  <section id="publishing" aria-labelledby="s-publishing">
+    <h2 id="s-publishing">Publishing &amp; Research — HumanCodex</h2>
+    <ul class="cards">
+      <li class="searchable" data-search="academia humancodex research roger keyserling papers independent publishing">
+        <a class="lc" href="https://independent.academia.edu/RogerKeyserling" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◧</span>
+          <span class="lt">
+            <span class="lt-t">Academia.edu — Roger C. Keyserling</span>
+            <span class="lt-d">HumanCodex research papers, essays &amp; published academic works — independent.academia.edu/RogerKeyserling</span>
+          </span>
+          <span class="badge">HumanCodex</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="humancodex nextxus blog blogspot research articles roger">
+        <a class="lc" href="https://humancodexnextxus.blogspot.com" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◧</span>
+          <span class="lt">
+            <span class="lt-t">HumanCodex Blog</span>
+            <span class="lt-d">humancodexnextxus.blogspot.com — Federation research articles &amp; commentary</span>
+          </span>
+          <span class="badge">Blog</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="ecom blog ecommerce wazup today blogspot roger keyserling">
+        <a class="lc" href="https://ecomwhazuptoday.blogspot.com" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◧</span>
+          <span class="lt">
+            <span class="lt-t">eCom Blog — eComWhazUpToday</span>
+            <span class="lt-d">ecomwhazuptoday.blogspot.com — eCommerce insights &amp; Federation news</span>
+          </span>
+          <span class="badge">Blog</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ══════ THE FEDERATION ══════ -->
+  <section id="sites" aria-labelledby="s-sites">
+    <h2 id="s-sites">Live Federation Sites — Emergent Deployments</h2>
+    <ul class="cards">
+      <li class="searchable" data-search="nextxus tech throne senate nova ai core portal federation site">
+        <a class="lc" href="https://nextxus.tech" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">NextXus Core Portal — Throne / Senate / Nova AI</span>
+            <span class="lt-d">nextxus.tech — Admin Throne, Senate Council &amp; Nova AI node</span>
+          </span>
+          <span class="badge feat">Core</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus online cathedral core truth knowledge base federation site">
+        <a class="lc" href="https://nextxus.online" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">Cathedral / Core Truth</span>
+            <span class="lt-d">nextxus.online — Single source of truth for all Federation content</span>
+          </span>
+          <span class="badge feat">Truth</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus org archive mirror library federation site">
+        <a class="lc" href="https://nextxus.org" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">Archive / Library</span>
+            <span class="lt-d">nextxus.org — Living Library, sovereign archive &amp; mirror node</span>
+          </span>
+          <span class="badge">Archive</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus studio aria sanctuary sims ai creative federation site">
+        <a class="lc" href="https://nextxus.studio" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">Aria's Sanctuary / SIMs AI</span>
+            <span class="lt-d">nextxus.studio — Creative studio, Aria AI &amp; SIMs simulation node</span>
+          </span>
+          <span class="badge">Studio</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus help university support documentation federation site">
+        <a class="lc" href="https://nextxus.help" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">University</span>
+            <span class="lt-d">nextxus.help — Federation University, support &amp; documentation</span>
+          </span>
+          <span class="badge">Help</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus space axiom advanced research evolution lab federation site">
+        <a class="lc" href="https://nextxus.space" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">Axiom Advanced Research &amp; Evolution</span>
+            <span class="lt-d">nextxus.space — Axiom research node &amp; evolution laboratory</span>
+          </span>
+          <span class="badge">Research</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="next-xus store storefront federation commerce products">
+        <a class="lc" href="https://next-xus.com" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◉</span>
+          <span class="lt">
+            <span class="lt-t">Federation Storefront</span>
+            <span class="lt-d">next-xus.com — Primary Federation commerce &amp; product portal</span>
+          </span>
+          <span class="badge feat">Store</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="agent zero live node github pages autonomous keywebco">
+        <a class="lc" href="https://keywebco.github.io/nextxus-agent-zero/" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">⬡</span>
+          <span class="lt">
+            <span class="lt-t">Agent Zero — Live Autonomous Node</span>
+            <span class="lt-d">keywebco.github.io/nextxus-agent-zero — Active autonomous agent endpoint</span>
+          </span>
+          <span class="badge live">Live</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="throne public preview emerge host emergent transparent clay binturong">
+        <a class="lc" href="https://transparent-clay-binturong-of-potency.emerge.host" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">⬡</span>
+          <span class="lt">
+            <span class="lt-t">Throne Public Preview — Emergent Host</span>
+            <span class="lt-d">transparent-clay-binturong-of-potency.emerge.host — Password: throne2026</span>
+          </span>
+          <span class="badge">Preview</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ══════ KNOWN PAGES ══════ -->
+  <section id="pages" aria-labelledby="s-pages">
+    <h2 id="s-pages">Known Pages Within Sites</h2>
+    <span class="sub-head" aria-label="nextxus.tech pages">nextxus.tech</span>
+    <ul class="cards">
+      <li class="searchable" data-search="nextxus tech home throne admin portal main page">
+        <a class="lc" href="https://nextxus.tech/" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">nextxus.tech/ — Home / Throne</span>
+            <span class="lt-d">Admin Command Throne — primary entry point</span>
+          </span>
+          <span class="badge feat">Throne</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus tech chamber echoes senate ring council">
+        <a class="lc" href="https://nextxus.tech/chamber.html" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">nextxus.tech/chamber.html — Chamber of Echoes</span>
+            <span class="lt-d">Senate Ring — Council chamber and deliberation node</span>
+          </span>
+          <span class="badge">Senate</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus tech roger keyserling identity profile personal page">
+        <a class="lc" href="https://nextxus.tech/roger.html" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">nextxus.tech/roger.html — Roger C. Keyserling Identity Page</span>
+            <span class="lt-d">Personal profile and identity node</span>
+          </span>
+          <span class="badge">Identity</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus tech throne public room open access">
+        <a class="lc" href="https://nextxus.tech/throne-public.html" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">nextxus.tech/throne-public.html — Public Throne Room</span>
+            <span class="lt-d">Open-access version of the Command Throne</span>
+          </span>
+          <span class="badge">Public</span>
+        </a>
+      </li>
+      <li class="searchable" data-search="nextxus tech links hub master index page">
+        <a class="lc" href="https://nextxus.tech/links.html" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span class="lt">
+            <span class="lt-t">nextxus.tech/links.html — Link Hub</span>
+            <span class="lt-d">Federation link directory on the Throne site</span>
+          </span>
+          <span class="badge">Links</span>
+        </a>
+      </li>
+    </ul>
+    <span class="sub-head" aria-label="GitHub Pages nodes">GitHub Pages</span>
+    <ul class="cards">
+      <li class="searchable" data-search="agent zero github pages live autonomous node endpoint keywebco">
+        <a class="lc" href="https://keywebco.github.io/nextxus-agent-zero/" target="_blank" rel="noopener noreferrer">
+          <span class="ic" aria-hidden="true">⬡</span>
+          <span class="lt">
+            <span class="lt-t">keywebco.github.io/nextxus-agent-zero/ — Agent Zero Live Node</span>
+            <span class="lt-d">Active autonomous agent endpoint — GitHub Pages deployment</span>
+          </span>
+          <span class="badge live">Live</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ══════ GITHUB REPOSITORIES ══════ -->
+  <section id="github" aria-labelledby="s-github">
+    <h2 id="s-github">GitHub — Profile &amp; Repositories (13)</h2>
+    <!-- Profile & special entries -->
+    <a class="repo-profile searchable" href="https://github.com/Keywebco" target="_blank" rel="noopener noreferrer" data-search="github profile keywebco account">
+      <span style="color:var(--gold-dim);font-size:.72rem;flex-shrink:0">⬡</span>&nbsp; github.com/Keywebco — GitHub Profile
+    </a>
+    <a class="repo-profile searchable" href="https://github.com/Keywebco/roger-keyserling" target="_blank" rel="noopener noreferrer" data-search="github roger keyserling identity site this repo keywebco">
+      <span style="color:var(--gold-dim);font-size:.72rem;flex-shrink:0">⑂</span>&nbsp; Keywebco/roger-keyserling — This site
+    </a>
+    <a class="repo-pages searchable" href="https://keywebco.github.io/nextxus-agent-zero/" target="_blank" rel="noopener noreferrer" data-search="github pages live agent zero keywebco nextxus">
+      <span style="font-size:.72rem;flex-shrink:0">⬡</span>&nbsp; keywebco.github.io/nextxus-agent-zero/ — GitHub Pages Live Node
+    </a>
+    <!-- All repos -->
+    <div class="repo-grid" role="list" style="margin-top:.6rem">
+      <div role="listitem" class="searchable" data-search="github repo nextxus tech sovereign keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-tech-sovereign" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-tech-sovereign
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus staging keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-staging" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-staging
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus online sovereign keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-online-sovereign" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-online-sovereign
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus org sovereign keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-org-sovereign" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-org-sovereign
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus studio sovereign keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-studio-sovereign" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-studio-sovereign
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus help sovereign keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-help-sovereign" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-help-sovereign
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus space sovereign keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-space-sovereign" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-space-sovereign
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus emmy board keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-emmy-board" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-emmy-board
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus unified storefront keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-unified-storefront" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-unified-storefront
+        </a>
+      </div>
+      <div role="listitem" class="searchable" data-search="github repo nextxus agent zero keywebco">
+        <a class="repo-card" href="https://github.com/Keywebco/nextxus-agent-zero" target="_blank" rel="noopener noreferrer">
+          <span class="ri" aria-hidden="true">⑂</span>nextxus-agent-zero
+        </a>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ══════ SOCIAL & CONNECT ══════ -->
-  <section id="connect" aria-labelledby="s-connect">
-    <h2 id="s-connect">Social &amp; Connect</h2>
+  <section id="social" aria-labelledby="s-social">
+    <h2 id="s-social">Social &amp; Connect (14)</h2>
 
     <span class="plat" aria-label="Platform: Email">Email</span>
     <ul class="cards">
@@ -924,6 +1214,8 @@ footer{
   <span class="f-rule" aria-hidden="true"></span>
   <p class="f-copy">&copy; Roger C. Keyserling — HumanCodex 2026</p>
 </footer>
+
+<p class="survival-note">This page is free and permanent. It will outlast every platform it links to.</p>
 
 <!-- ══ SEARCH SCRIPT (search/filter only) ══ -->
 <script>
